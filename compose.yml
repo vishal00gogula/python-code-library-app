@@ -1,0 +1,28 @@
+---
+services:
+  db:
+    image: dbimage
+    ports:
+      - "3306:3306"
+
+  appimage:
+    image: appimage
+    ports:
+      - "5000:5000"
+
+  auth_service:
+    image: auth_service
+    ports:
+      - "5001:5001"
+
+  borrow_service:
+    image: borrow_service
+    ports:
+      - "5003:5003"
+
+  book_service:
+    image: book_service
+    ports:
+      - "5002:5002"
+
+
