@@ -4,25 +4,37 @@ services:
     image: dbimage
     ports:
       - "3306:3306"
+    deploy:
+      replicas: 3
 
   appimage:
     image: appimage
     ports:
       - "5000:5000"
+    deploy:
+      replicas: 3
+
 
   auth_service:
     image: auth_service
     ports:
       - "5001:5001"
+    deploy:
+      replicas: 3
+
 
   borrow_service:
     image: borrow_service
     ports:
       - "5003:5003"
+    deploy:
+      replicas: 3
 
   book_service:
     image: book_service
     ports:
       - "5002:5002"
+    deploy:
+      replicas: 3
 
 
