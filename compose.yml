@@ -1,14 +1,14 @@
 ---
 services:
   db:
-    image: dbimage
+    image: vishalgogula123/firstrepo:dbimage
     ports:
       - "3306:3306"
     deploy:
       replicas: 1
 
   appimage:
-    image: appimage
+    image: vishalgogula123/firstrepo:appimage
     ports:
       - "5000:5000"
     deploy:
@@ -16,7 +16,7 @@ services:
 
 
   auth_service:
-    image: auth_service
+    image: vishalgogula123/firstrepo:auth_service
     ports:
       - "5001:5001"
     deploy:
@@ -24,14 +24,14 @@ services:
 
 
   borrow_service:
-    image: borrow_service
+    image: vishalgogula123/firstrepo:borrow_service
     ports:
       - "5003:5003"
     deploy:
       replicas: 3
 
   book_service:
-    image: book_service
+    image: vishalgogula123/firstrepo:book_service
     ports:
       - "5002:5002"
     deploy:
