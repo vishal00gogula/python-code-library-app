@@ -5,7 +5,7 @@ services:
     ports:
       - "3306:3306"
     deploy:
-      replicas: 3
+      replicas: 1
 
   appimage:
     image: appimage
