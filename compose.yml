@@ -1,14 +1,14 @@
 ---
 services:
   db:
-    image: vishalgogula123/firstrepo:dbimage
+    image: 210007886395.dkr.ecr.eu-north-1.amazonaws.com/myrepo:dbimage
     ports:
       - "3306:3306"
     deploy:
       replicas: 1
 
   appimage:
-    image: vishalgogula123/firstrepo:appimage
+    image: 210007886395.dkr.ecr.eu-north-1.amazonaws.com/myrepo:appimage
     ports:
       - "5000:5000"
     deploy:
@@ -16,7 +16,7 @@ services:
 
 
   auth_service:
-    image: vishalgogula123/firstrepo:auth_service
+    image: 210007886395.dkr.ecr.eu-north-1.amazonaws.com/myrepo:auth_service
     ports:
       - "5001:5001"
     deploy:
@@ -24,14 +24,14 @@ services:
 
 
   borrow_service:
-    image: vishalgogula123/firstrepo:borrow_service
+    image: 210007886395.dkr.ecr.eu-north-1.amazonaws.com/myrepo:borrow_service
     ports:
       - "5003:5003"
     deploy:
       replicas: 3
 
   book_service:
-    image: vishalgogula123/firstrepo:book_service
+    image: 210007886395.dkr.ecr.eu-north-1.amazonaws.com/myrepo:book_service
     ports:
       - "5002:5002"
     deploy:
